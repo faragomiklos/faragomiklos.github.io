@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rólunk táblázat</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="/">Főoldal</a></li>
+        <li><a href="/oldalak/termekek.html">Termékek</a></li>
+        <li><a href="/oldalak/megrendeles.html">Megrendelések</a></li>
+        <li><a href="/tablazatok.html">Rólunk Táblázat</a></li>
+    </ul>
+    <h1>Nyitvatartás</h1>
+    <h2>alap</h2>
+    <table>
+        <caption>Nyitvatartási idő</caption>    <!--A táblázat címe-->
+        <thead>                                 <!--A táblázat fejléce-->
+            <tr>
+                <th>Nap</th>
+                <th>Nyit</th>
+                <th>Zár</th>
+            </tr>
+        </thead>
+        <tbody> <!--Adatok-->
+            <tr>
+                <td>Hétfő - Péntek</td>
+                <td>09:00</td>
+                <td>21:00</td>
+            </tr>
+            <tr>
+                <td>Szombat</td>
+                <td>09:00</td>
+                <td>24:00</td>
+            </tr>
+            <tr>
+                <td>Vasárnap</td>
+                <td>09:00</td>
+                <td>12:00</td>
+            </tr>
+        </tbody> 
+        <tfoot> <!--Lábléc-->
+            <tr>
+                <td>
+                    &copy;2020
+                </td>
+            </tr>            
+        </tfoot>                        
+        
+    </table>
+
+    <h2>összevonás</h2>
+    <table>
+        <caption>Nyitvatartási idő</caption>    <!--A táblázat címe-->
+        <thead>                                 <!--A táblázat fejléce-->
+            <tr>
+                <th>Nap</th>
+                <th>Nyit</th>
+                <th>Zár</th>
+            </tr>
+        </thead>
+        <tbody> <!--Adatok-->
+            <tr>
+                <td>Hétfő - Péntek</td>
+                <td>09:00</td>
+                <td rowspan="2">21:00</td>
+            </tr>
+            <tr>
+                <td>Szombat</td>
+                <td>10:00</td>
+            </tr>
+            <tr>
+                <td>Vasárnap</td>
+                <td colspan="2">Zárva</td>
+            </tr>
+        </tbody> 
+        <tfoot> <!--Lábléc-->
+            <tr>
+                <td colspan="3">
+                    &copy;2020
+                </td>
+            </tr>            
+        </tfoot>                        
+        
+    </table>
+</body>
+
+</html>
