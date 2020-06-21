@@ -1,5 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+* {
+    box-sizing: border-box;
+}
 
 body {
     background: url(/boxmodell/kepek/hatter_2.JPG) no-repeat fixed;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.box{
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    padding: 0px;
+    margin: 40px auto;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+    
+}
+
+.box .box-tartalom {
+    padding: 20px;
+}
+
+.box .box-tartalom p {
+    color: grey;
+}
+
+.box .box-tartalom h2{
+    margin: 0;
+    color: green;
+}
+.box .box-tartalom .reszletek {
+    margin: 16px 0 0 0;
+}
+.box .box-tartalom .reszletek a {
+    background: orange;
+    color: black;
+    padding: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.box .fejlec-kep {
+    background-image: url('/boxmodell/kepek/naplemente_1.JPG');
+    height: 350px;
+}
+
+.box.box-2 .fejlec-kep {
+    background-image: url('/boxmodell/kepek/pinty_1.JPG');    
 }
