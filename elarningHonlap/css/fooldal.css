@@ -1,8 +1,10 @@
-body{
-    background-color: brown;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+
+
 h1{
-    font-size: 60px;
+   /* font-size: 60px;*/
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
     color: RGB(255,208,0);
 }
 
