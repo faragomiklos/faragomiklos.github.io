@@ -1,0 +1,22 @@
+body{
+    background-color: brown;
+}
+h1{
+    font-size: 60px;
+    color: RGB(255,208,0);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+caption{
+    text-align: center;
+}
+thead{
+    text-align: center;
+}
