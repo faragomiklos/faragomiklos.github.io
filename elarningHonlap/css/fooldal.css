@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
 
+body{
+    background-color: #28A745;    
+}
 
 h1{
    /* font-size: 60px;*/
