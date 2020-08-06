@@ -7,8 +7,9 @@
 
 body{
     margin: 0;
-    font-family: "oswald", sans-serif; 
-    background-color: #28A745;    
+    font-family: "oswald", sans-serif;
+    color:  rgb(61, 26, 2);
+    background-color: #ffe57f; 
 }
 
 .oldal{
@@ -16,7 +17,6 @@ body{
     width: 1000px;
 }
 
-/* Navigáció formázása*/
 nav ul{
     margin: 0;
 }
@@ -26,20 +26,33 @@ nav li{
     margin: 10px 1% 10px 1%; 
     width: 30%;
     text-align: center;
-
 }
 
 nav a{
     display: block; 
-    background-color: rgb(61, 26, 2);
+    background-color:#D3E64A;
     text-decoration: none;
     padding: 10px 0;
     border-radius: 10px;
-    color: rgb(255, 208, 0);
-    font-size: 20px;
+    border-color:#28A745;
+    border-style: solid;
+    color: rgb(117, 10, 10);
+    font-size: 25px;
     font-weight: 700;
 }
 
 nav a:hover{
-    background-color: rgba(177, 74, 5, 1);
+    background-color: rosybrown;
+}
+
+
+main {
+    /* border: 5px;*/
+    border-radius: 10px;
+    border-color:#28A745;
+    border-style: solid;
+}
+
+h1{
+    text-align: center;
 }
