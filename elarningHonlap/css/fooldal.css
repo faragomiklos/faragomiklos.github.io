@@ -26,8 +26,15 @@ th{
 tbody tr:nth-child(even) {background-color: #f2f2f2;}
 tbody tr:nth-child(odd) {background-color: #D3E64A;;}
 
-tbody tr:hover {background-color: red;}
+tbody tr:nth-child(even):hover {
+    background-color: rgb(117, 10, 10); 
+    color:#f2f2f2;
+}
 
+tbody tr:nth-child(odd):hover {
+    background-color: rgb(117, 10, 10); 
+    color:#D3E64A;
+}
 tbody{
     border: 4px solid #28A745;
     border-radius: 5px;
