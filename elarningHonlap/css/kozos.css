@@ -14,7 +14,7 @@ body{
 .oldal{
     margin: 10px auto;
     max-width: 1000px;
-    min-width: 600px;
+    min-width: 680px;
 }
 
 nav ul{
@@ -41,7 +41,8 @@ nav a{
 }
 
 nav a:hover{
-    background-color: rosybrown;
+    background-color: rgb(117, 10, 10);
+    color: #D3E64A;
 }
 
 
