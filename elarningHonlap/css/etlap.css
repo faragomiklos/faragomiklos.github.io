@@ -32,3 +32,29 @@ tbody tr:nth-child(odd):hover {
     background-color: rgb(117, 10, 10); 
     color:#D3E64A;
 }
+
+/* Első oszlop fejléc*/
+thead th:nth-child(1){
+    width: 60px;
+    text-align: center;
+}
+
+/* Harmadik oszlop fejléc*/
+thead th:nth-child(3){
+    width: 60px;     
+}
+
+
+/* Első oszlop */
+tbody tr td:nth-child(1){
+    width: 60px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+/* Harmadik oszlop */
+tbody tr td:nth-child(3){
+    width: 60px;
+    padding-right: 20px;     
+    text-align: right;
+}
