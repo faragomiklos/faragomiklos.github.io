@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap'); 
 
 *{
     box-sizing: border-box;
@@ -14,7 +13,8 @@ body{
 
 .oldal{
     margin: 10px auto;
-    width: 1000px;
+    max-width: 1000px;
+    min-width: 600px;
 }
 
 nav ul{
@@ -34,8 +34,7 @@ nav a{
     text-decoration: none;
     padding: 10px 0;
     border-radius: 10px;
-    border-color:#28A745;
-    border-style: solid;
+    border: 4px solid #28A745;
     color: rgb(117, 10, 10);
     font-size: 25px;
     font-weight: 700;
@@ -46,13 +45,51 @@ nav a:hover{
 }
 
 
-main {
-    /* border: 5px;*/
+h1{
+    display: block;
+    width: 650px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color:#D3E64A;
+    border-radius: 10px;
+    border: 4px solid #28A745;
+    color: rgb(117, 10, 10);
+    position: relative;
+    top: 0px;
+    z-index: 1;
+}
+
+
+main{
+    border: 4px solid #28A745;
+    border-radius: 10px;
+    padding: 40px 10px 10px 10px;
+    position: relative;
+    top: -55px;
+
+}
+
+/*
+h2{
+    margin: auto;
+    margin-bottom: 60px;
+    width: 500px;
+    padding: 10px 30px;
+    text-align: center;
+    background-color:#D3E64A;
     border-radius: 10px;
     border-color:#28A745;
     border-style: solid;
+    color: rgb(117, 10, 10);
 }
-
-h1{
+*/
+h3{
+    width: 300px;
     text-align: center;
+    background-color:#D3E64A;
+    border-radius: 10px;
+    border-color:#28A745;
+    border-style: solid;
+    color: rgb(117, 10, 10);    
 }
