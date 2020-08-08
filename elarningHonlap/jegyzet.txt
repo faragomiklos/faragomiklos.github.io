@@ -1,0 +1,20 @@
+
+CSS alapok:
+Színek:
+napsárga: RGB(255,208,0)
+Élénk zöld: #28A745
+
+
+Megrendelőlap
+
+Megrendelő adatai:
+	Név
+	email cím
+	szállítási cím
+	Megjegyzés
+	
+Hamburger adatai
+	5 éle hamburger
+	feltétel
+	2 féle szósz
+	mennyiség
