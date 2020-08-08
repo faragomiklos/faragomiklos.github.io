@@ -14,7 +14,20 @@ Megrendelő adatai:
 	Megjegyzés
 	
 Hamburger adatai
-	5 éle hamburger
-	feltétel
-	2 féle szósz
-	mennyiség
+	hamburger
+	5 feltét
+	2 féle szósz - legördülő menü
+    mennyiség - min 1- max 10
+    
+
+Feltétek:
+
+Sajt: 300Ft
+bacon: 400Ft
+dupla hús: 1000Ft
+sajt és bacon együtt: 700Ft
+Sajt és duplahús együtt: 1300Ft
+
+Szószok:
+hagyományos(ez benne van az árban)
+csípős: 100Ft

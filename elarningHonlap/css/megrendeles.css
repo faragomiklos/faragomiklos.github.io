@@ -1,0 +1,7 @@
+h1{
+    width: 300px;
+}
+
+nav a:hover{
+    text-decoration: none;
+}
