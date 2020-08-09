@@ -30,175 +30,144 @@
                 <h1>Megrendelés</h1>
             </header>
             <main>
+                <form action="POST">
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-2"></div>
-                        <div class="col-form-label-lg">Megrendelő adatai</div>
-                        <div class="col-sm-9"></div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-2" for="vezeteknev">Vezetéknév:</div>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control form-control-sm" name="" id="vezeteknev" placeholder="Vezetéknév">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-form-label-lg">Megrendelő adatai</div>
+                            <div class="col-sm-9"></div>
                         </div>
-                        <div class="col-sm-5"></div>
-                    </div>
-                </div>
-
-                <form>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label class=" col-form-label col-form-label-lg">Megrendelő adatai</label>
-                        <div class="col-sm-8"></div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label for="vezeteknev" class="col-sm-2 col-form-label col-form-label-sm">Vezetéknév:</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control form-control-sm" id="vezeteknev"
-                                placeholder="Vezetéknév">
-                        </div>
-                        <div class="col-sm-5"></div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label for="keresztnev" class="col-sm-2 col-form-label col-form-label-sm">Keresztnév:</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control form-control-sm" id="keresztnev"
-                                placeholder="Keresztnév">
-                        </div>
-                        <div class="col-sm-5"></div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label for="email" class="col-sm-2 col-form-label col-form-label-sm">E-mail:</label>
-                        <div class="col-sm-3">
-                            <input type="email" class="form-control form-control-sm" id="email"
-                                placeholder="pelda@pelda.hu">
-                        </div>
-                        <div class="col-sm-5"></div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label for="telszam" class="col-sm-2 col-form-label col-form-label-sm">Telefonszám:</label>
-                        <div class="col-sm-3">
-                            <input type="tel" class="form-control form-control-sm" id="telszam"
-                                placeholder="06301234567">
-                        </div>
-                        <div class="col-sm-5"></div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label for="varos" class="col-sm-2 col-form-label col-form-label-sm">Szállítási cím:</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control form-control-sm" id="varos" placeholder="Győr">
-                        </div>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control form-control-sm" id="utca" placeholder="pelda utca">
-                        </div>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control form-control-sm" id="hsz" placeholder="50.">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label for="megjegyzes" class="col-sm-2 col-form-label col-form-label-sm">Megjegyzés:</label>
-                        <div class="col-sm-6">
-                            <textarea class="form-control form-control-sm" id="megjegyzes" rows="3"
-                                placeholder="Megjegyzés."></textarea>
-                        </div>
-                        <div class="col-sm-4"></div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label class="col-sm-2 col-form-label col-form-label-lg">Termék adatai</label>
-                        <div class="col-sm-8"></div>
-                    </div>
-
-                    <div class=" form-group row">
-                        <div class="col-sm-2"></div>
-                        <label class="col-form-label-sm col-sm-2 pt-0">Plussz feltét:</label>
-                        <div class="col-sm-8">
-                            <div class="form-check col-form-label-sm">
-                                <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet1"
-                                    value="0Ft" checked>
-                                <label class="form-check-label" for="plusszFeltet1">nem kérek</label>
+    
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2" for="vezeteknev">Vezetéknév:</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" name="vezeteknev" id="vezeteknev" placeholder="Vezetéknév">
                             </div>
-                            <div class="form-check col-form-label-sm">
-                                <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet2"
-                                    value="300Ft">
-                                <label class="form-check-label" for="plusszFeltet2">sajt (+300Ft)</label>
-                            </div>
-                            <div class="form-check col-form-label-sm">
-                                <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet3"
-                                    value="400Ft">
-                                <label class="form-check-label" for="plusszFeltet3">bacon (+400Ft)</label>
-                            </div>
-                            <div class="form-check col-form-label-sm">
-                                <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet4"
-                                    value="1000Ft">
-                                <label class="form-check-label" for="plusszFeltet4">dupla hús (+1000Ft)</label>
-                            </div>
-                            <div class="form-check col-form-label-sm">
-                                <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet5"
-                                    value="700Ft">
-                                <label class="form-check-label" for="plusszFeltet5">sajt és bacon együtt
-                                    (+700Ft)</label>
-                            </div>
-                            <div class="form-check col-form-label-sm">
-                                <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet6"
-                                    value="1300Ft">
-                                <label class="form-check-label" for="plusszFeltet6">sajt és duplahús együtt
-                                    (+1300Ft)</label>
-                            </div>
+                            <div class="col-sm-5"></div>
                         </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label for="szosz" class="col-sm-2 col-form-label col-form-label-sm">Szósz:</label>
-                        <div class="col-sm-3">
-                            <select id="szosz" class="form-control form-control-sm">
-                                <option value="0Ft">nem kérek</option>
-                                <option value="0Ft">hagyományos</option>
-                                <option value="100Ft">csípős (+100Ft)</option>
-                            </select>
+    
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2" for="keresztnev">Keresztnév:</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" name="keresztnev" id="keresztnev" placeholder="Keresztnév">
+                            </div>
+                            <div class="col-sm-5"></div>
                         </div>
-                        <div class="col-sm-5"></div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label for="mennyiseg" class="col-sm-2 col-form-label col-form-label-sm">Mennyiség:</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control form-control-sm" id="mennyiseg" placeholder="db">
+    
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2" for="email">E-mail cím:</label>
+                            <div class="col-sm-3">
+                                <input type="email" class="form-control form-control-sm" name="email" id="email" placeholder="E-mail cím">
+                            </div>
+                            <div class="col-sm-5"></div>
                         </div>
-                        <div class="col-sm-5"></div>
-                    </div>
+    
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2" for="telszam">Telefonszám:</label>
+                            <div class="col-sm-3">
+                                <input type="tel" class="form-control form-control-sm" name="telszam" id="telszam" placeholder="Telefonszám">
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2" for="varos">Szállítási cím:</label>
+                            <div class="col-sm-2"><input type="number" class="form-control form-control-sm" name="irszam" placeholder="9024"></div>
+                            <div class="col-sm-2"><input type="text" class="form-control form-control-sm" name="varos" id="varos" placeholder="Győr"></div>
+                            <div class="col-sm-2"><input type="text" class="form-control form-control-sm" name="utca" placeholder="Pelda u."></div>
+                            <div class="col-sm-1"><input type="number" class="form-control form-control-sm" name="hsz" placeholder="63."></div>
+                            <div class="col-sm-1"></div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2" for="megjegyzes">Megjegyzés:</label>
+                            <div class="col-sm-6">
+                                <textarea class="form-control form-control-sm" id="megjegyzes" rows="3" placeholder="Megjegyzés."></textarea>
+                            </div>
+                            <div class="col-sm-2"></div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-form-label-lg">Termék adatai</div>
+                            <div class="col-sm-9"></div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2" for="plusszFeltet">Plussz feltét:</label>
+                            <div class="col-sm-3">
+                                <div class="form-check col-form-label-sm">
+                                    <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet0" value="0Ft" checked>
+                                    <label class="form-check-label" for="plusszFeltet0">nem kérek</label>
+                                </div>
+                                <div class="form-check col-form-label-sm">
+                                    <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet1" value="300Ft" checked>
+                                    <label class="form-check-label" for="plusszFeltet1">sajt (+300Ft)</label>
+                                </div>
+                                <div class="form-check col-form-label-sm">
+                                    <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet2" value="400Ft" checked>
+                                    <label class="form-check-label" for="plusszFeltet2">bacon (+400Ft)</label>
+                                </div>
+                                <div class="form-check col-form-label-sm">
+                                    <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet3" value="1000Ft" checked>
+                                    <label class="form-check-label" for="plusszFeltet3">dupla hús (+1000Ft)</label>
+                                </div>
+                                <div class="form-check col-form-label-sm">
+                                    <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet4" value="700Ft" checked>
+                                    <label class="form-check-label" for="plusszFeltet4">sajt és bacon együtt (+700Ft)</label>
+                                </div>
+                                <div class="form-check col-form-label-sm">
+                                    <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet5" value="1300Ft" checked>
+                                    <label class="form-check-label" for="plusszFeltet5">sajt és duplahús együtt (+1300Ft)</label>
+                                </div>    
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2" for="szosz">Szósz:</label>
+                            <div class="col-sm-3">
+                                <select id="szosz" class="form-control form-control-sm">
+                                    <option value="0Ft">nem kérek</option>
+                                    <option value="0Ft">hagyományos</option>
+                                    <option value="100Ft">csípős (+100Ft)</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2" for="telszam">Mennyiség:</label>
+                            <div class="col-sm-3">
+                                <input type="number" class="form-control form-control-sm" name="mennyiseg" id="mennyiseg" placeholder="0">
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-form-label-lg">Összesen:</div>
+                            <div class="col-sm-9"></div>
+                        </div>
 
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <label class="col-sm-2 col-form-label col-form-label-lg">Összesen:</label>
-                        <div class="col-sm-8"></div>
+                        <div class="form-group row">
+                            <div class="col-sm-5"></div>
+                            <button type="submit" class="btn btn-success sm-2">Megrendel</button>
+                            <div class="col-sm-5"></div>
+                        </div>
+                        
+    
                     </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-5"></div>
-                        <button type="submit" class="btn btn-success sm-2">Megrendel</button>
-                        <div class="col-sm-5"></div>
-                    </div>
-
                 </form>
 
             </main>
