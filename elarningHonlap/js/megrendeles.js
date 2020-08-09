@@ -1,0 +1,1 @@
+console.log("Szia! Ez egy konzol üzenet");

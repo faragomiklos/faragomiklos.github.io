@@ -34,9 +34,9 @@
                 <form>
 
                     <div class="form-group row">
-                        <div class="col-lg-2"></div>
-                        <label class="col-lg-2 col-form-label col-form-label-lg">Megrendelő adatai</label>
-                        <div class="col-lg-8"></div>
+                        <div class="col-sm-2"></div>
+                        <label class=" col-form-label col-form-label-lg">Megrendelő adatai</label>
+                        <div class="col-sm-8"></div>
                     </div>
 
                     <div class="form-group row">
@@ -104,9 +104,9 @@
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-lg-2"></div>
-                        <label class="col-lg-2 col-form-label col-form-label-lg">Termék adatai</label>
-                        <div class="col-lg-8"></div>
+                        <div class="col-sm-2"></div>
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Termék adatai</label>
+                        <div class="col-sm-8"></div>
                     </div>
 
                     <div class=" form-group row">
@@ -115,33 +115,33 @@
                         <div class="col-sm-8">
                             <div class="form-check col-form-label-sm">
                                 <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet1"
-                                    value="option1" checked>
+                                    value="0" checked>
                                 <label class="form-check-label" for="plusszFeltet1">nem kérek</label>
                             </div>
                             <div class="form-check col-form-label-sm">
                                 <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet2"
-                                    value="option2">
+                                    value="300">
                                 <label class="form-check-label" for="plusszFeltet2">sajt (+300Ft)</label>
                             </div>
                             <div class="form-check col-form-label-sm">
                                 <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet3"
-                                    value="option2">
+                                    value="400">
                                 <label class="form-check-label" for="plusszFeltet3">bacon (+400Ft)</label>
                             </div>
                             <div class="form-check col-form-label-sm">
                                 <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet4"
-                                    value="option2">
+                                    value="1000">
                                 <label class="form-check-label" for="plusszFeltet4">dupla hús (+1000Ft)</label>
                             </div>
                             <div class="form-check col-form-label-sm">
                                 <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet5"
-                                    value="option2">
+                                    value="700">
                                 <label class="form-check-label" for="plusszFeltet5">sajt és bacon együtt
                                     (+700Ft)</label>
                             </div>
                             <div class="form-check col-form-label-sm">
                                 <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet6"
-                                    value="option2">
+                                    value="1300">
                                 <label class="form-check-label" for="plusszFeltet6">sajt és duplahús együtt
                                     (+1300Ft)</label>
                             </div>
@@ -153,9 +153,9 @@
                         <label for="szosz" class="col-sm-2 col-form-label col-form-label-sm">Szósz:</label>
                         <div class="col-sm-3">
                             <select id="szosz" class="form-control form-control-sm">
-                                <option>nem kérek</option>
-                                <option>hagyományos</option>
-                                <option>csípős (+100Ft)</option>
+                                <option value="0">nem kérek</option>
+                                <option value="0">hagyományos</option>
+                                <option value="100">csípős (+100Ft)</option>
                             </select>
                         </div>
                         <div class="col-sm-5"></div>
@@ -171,15 +171,15 @@
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-lg-2"></div>
-                        <label class="col-lg-2 col-form-label col-form-label-lg">Összesen:</label>
-                        <div class="col-lg-8"></div>
+                        <div class="col-sm-2"></div>
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Összesen:</label>
+                        <div class="col-sm-8"></div>
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-lg-5"></div>
-                        <button type="submit" class="btn btn-success mb-2">Megrendel</button>
-                        <div class="col-lg-5"></div>
+                        <div class="col-sm-5"></div>
+                        <button type="submit" class="btn btn-success sm-2">Megrendel</button>
+                        <div class="col-sm-5"></div>
                     </div>
 
                 </form>
@@ -192,6 +192,8 @@
 
         </div>
     </div>
+
+    <script src="/elarningHonlap/js/megrendeles.js"></script>
 
 </body>
 
