@@ -32,11 +32,16 @@ function osszegSzamol() {
 
 function mennyisegEllenoriz(){
     let mennyisegBe = document.getElementById("mennyiseg");
-    if(isNaN(parseInt(mennyisegBe.value))){ mennyisegBe.value = 0}
+    if(isNaN(parseInt(mennyisegBe.value))){ mennyisegBe.value = 0};
 
-    if(parseInt(mennyisegBe.value) < 1) alert("Legalább egy darabot kell rendelni!");
-    else if (parseInt(mennyisegBe.value) > 10) alert("Legfeljebb 10 darabot rendelhetsz egyszerre!");    
-    
+    if(parseInt(mennyisegBe.value) < 1){
+        mennyisegBe.value = 0;
+        alert("Legalább egy darabot kell rendelni!");
+    } 
+    else if (parseInt(mennyisegBe.value) > 10){
+        mennyisegBe.value = 10;
+        alert("Legfeljebb 10 darabot rendelhetsz egyszerre!");    
+    }
     vegosszegFrissit();
 }
 
@@ -54,9 +59,14 @@ function vegosszegFrissit(){
 }
 
 function szovegEllenoriz(ellenorizendo, hossz) {
+    let szovegforma = /(^[A-z]{3,})$/;
+    szovegforma = szovegforma.source.replace('3',hossz);
     let szoveg = document.getElementById(ellenorizendo);
-    if (szoveg.value.trim().length > hossz) szoveg.value = szoveg.value.trim();
-    else alert("A " +szoveg.title+ " nem megfelelő!");
+    szoveg.value = szoveg.value.trim();
+    if(!szoveg.value.match(szovegforma))alert("A " +szoveg.title+ " nem megfelelő!");
+
+    //if (szoveg.value.trim().length > hossz) szoveg.value = szoveg.value.trim();
+    //else alert("A " +szoveg.title+ " nem megfelelő!");
 }
 
 
