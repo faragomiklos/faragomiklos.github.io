@@ -44,7 +44,7 @@
                             <label class="col-sm-2" for="vezeteknev">Vezetéknév:</label>
                             <div class="col-sm-3">
                                 <input type="text" class="form-control form-control-sm" name="vezeteknev"
-                                    id="vezeteknev" placeholder="Vezetéknév" required onblur="szovegEllenoriz('vezeteknev', 2)">
+                                    id="vezeteknev" placeholder="Vezetéknév" title="vezetéknév" required onblur="szovegEllenoriz('vezeteknev', 2)">
                             </div>
                             <div class="col-sm-5"></div>
                         </div>
@@ -54,7 +54,7 @@
                             <label class="col-sm-2" for="keresztnev">Keresztnév:</label>
                             <div class="col-sm-3">
                                 <input type="text" class="form-control form-control-sm" name="keresztnev"
-                                    id="keresztnev" placeholder="Keresztnév" required onblur="szovegEllenoriz('keresztnev', 2)">
+                                    id="keresztnev" placeholder="Keresztnév" title="keresztnév" required onblur="szovegEllenoriz('keresztnev', 2)">
                             </div>
                             <div class="col-sm-5"></div>
                         </div>
@@ -85,11 +85,11 @@
                             <div class="col-sm-2"><input type="number" class="form-control form-control-sm"
                                     name="irszam" placeholder="9024" required></div>
                             <div class="col-sm-2"><input type="text" class="form-control form-control-sm" name="varos"
-                                    id="varos" placeholder="Győr" required></div>
+                                    id="varos" placeholder="Győr" title="város" required onblur="szovegEllenoriz('varos', 2)"></div>
                             <div class="col-sm-2"><input type="text" class="form-control form-control-sm" name="utca"
-                                    placeholder="Pelda u." required></div>
+                                    id="utca" placeholder="Pelda u." title="cím" required onblur="szovegEllenoriz('utca', 2)"></div>
                             <div class="col-sm-1"><input type="number" class="form-control form-control-sm" name="hsz"
-                                    placeholder="63." required></div>
+                                    id="hsz" placeholder="63." required onblur="hszEllenoriz()"></div>
                             <div class="col-sm-1"></div>
                         </div>
 
@@ -115,33 +115,33 @@
                             <div class="col-sm-3">
                                 <div class="form-check col-form-label-sm">
                                     <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet0"
-                                        value="0Ft" checked>
+                                        value="0Ft" checked onchange="vegosszegFrissit()" >
                                     <label class="form-check-label" for="plusszFeltet0">nem kérek</label>
                                 </div>
                                 <div class="form-check col-form-label-sm">
                                     <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet1"
-                                        value="300Ft">
+                                        value="300Ft" onchange="vegosszegFrissit()">
                                     <label class="form-check-label" for="plusszFeltet1">sajt (+300Ft)</label>
                                 </div>
                                 <div class="form-check col-form-label-sm">
                                     <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet2"
-                                        value="400Ft">
+                                        value="400Ft" onchange="vegosszegFrissit()">
                                     <label class="form-check-label" for="plusszFeltet2">bacon (+400Ft)</label>
                                 </div>
                                 <div class="form-check col-form-label-sm">
                                     <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet3"
-                                        value="1000Ft">
+                                        value="1000Ft" onchange="vegosszegFrissit()">
                                     <label class="form-check-label" for="plusszFeltet3">dupla hús (+1000Ft)</label>
                                 </div>
                                 <div class="form-check col-form-label-sm">
                                     <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet4"
-                                        value="700Ft">
+                                        value="700Ft" onchange="vegosszegFrissit()">
                                     <label class="form-check-label" for="plusszFeltet4">sajt és bacon együtt
                                         (+700Ft)</label>
                                 </div>
                                 <div class="form-check col-form-label-sm">
                                     <input class="form-check-input" type="radio" name="plusszFeltet" id="plusszFeltet5"
-                                        value="1300Ft">
+                                        value="1300Ft" onchange="vegosszegFrissit()">
                                     <label class="form-check-label" for="plusszFeltet5">sajt és duplahús együtt
                                         (+1300Ft)</label>
                                 </div>
@@ -153,7 +153,7 @@
                             <div class="col-sm-2"></div>
                             <label class="col-sm-2" for="szosz">Szósz:</label>
                             <div class="col-sm-3">
-                                <select id="szosz" class="form-control form-control-sm">
+                                <select id="szosz" class="form-control form-control-sm" onchange="vegosszegFrissit()">
                                     <option value="0Ft">nem kérek</option>
                                     <option value="0Ft">hagyományos</option>
                                     <option value="100Ft">csípős (+100Ft)</option>
@@ -167,7 +167,7 @@
                             <label class="col-sm-2" for="mennyiseg">Mennyiség:</label>
                             <div class="col-sm-3">
                                 <input type="number" class="form-control form-control-sm" name="mennyiseg"
-                                    id="mennyiseg" value="1" required>
+                                    id="mennyiseg" value="1" required onblur="mennyisegEllenoriz()">
                             </div>
                             <div class="col-sm-5"></div>
                         </div>

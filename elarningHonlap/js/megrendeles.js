@@ -3,7 +3,7 @@ console.log("Szia! Ez egy konzol üzenet");
 function kivalasztottFeltet() {
     let feltet;
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
         feltet = document.getElementById("plusszFeltet" + i);
         if (feltet.checked == true) {
             return feltet.value;
@@ -29,11 +29,34 @@ function osszegSzamol() {
     fizetendoMegjelenit.innerHTML = osszeg;
 }
 
+
+function mennyisegEllenoriz(){
+    let mennyisegBe = document.getElementById("mennyiseg");
+    if(isNaN(parseInt(mennyisegBe.value))){ mennyisegBe.value = 0}
+
+    if(parseInt(mennyisegBe.value) < 1) alert("Legalább egy darabot kell rendelni!");
+    else if (parseInt(mennyisegBe.value) > 10) alert("Legfeljebb 10 darabot rendelhetsz egyszerre!");    
+    
+    vegosszegFrissit();
+}
+
+function vegosszegFrissit(){
+    let alapar = 1000;
+    let fizetendoMegjelenit = document.querySelector("span.fizetendo");
+    let mennyisegBemenet = document.getElementById("mennyiseg");
+    let feltet = kivalasztottFeltet();
+    let szosz = kivalasztottSzosz();
+    let osszeg = parseInt(mennyisegBemenet.value) * (alapar + parseInt(feltet) + parseInt(szosz));
+
+
+    fizetendoMegjelenit.innerHTML = osszeg;
+    
+}
+
 function szovegEllenoriz(ellenorizendo, hossz) {
-    let vissza;
     let szoveg = document.getElementById(ellenorizendo);
     if (szoveg.value.trim().length > hossz) szoveg.value = szoveg.value.trim();
-    else alert("A megadott adat nem megfelelő !");
+    else alert("A " +szoveg.title+ " nem megfelelő!");
 }
 
 
@@ -41,21 +64,22 @@ function emailEllenoriz() {
     let mailforma = /^([A-z0-9\_\.\-]+)@([a-z0-9\_\-\.]+).([a-z]{2,})$/;
     
     let email = document.getElementById("email");
-    if (email.value.match(mailforma)) {
-        console.log("Nem megfelelő email cím");
-    }
-    else {
-        alert("You have entered an invalid email address!");
+    if (!email.value.match(mailforma)) {
+        alert("A megadott e-mail cím nem megfelelő!");
     }
 }
 
-function telefonszamEllenoriz() {
-    let telefonszam = Number(document.getElementById("telszam").value);
-    if(isNaN(telefonszam)){
-        alert("Nem megfelelő telefonszám!");
-    }
-    else{
-        if(telefonszam.length < 10) alert("Nem megfelelő telefonszám!");
-    }
+function telefonszamEllenoriz(){
+    let telefonSzam = document.getElementById("telszam");
+    telefonSzam.value = telefonSzam.value.trim();
+    if(telefonSzam.value.length < 10) alert("A telefonszám nem megfelelő");
+}
+
+function hszEllenoriz(){
+    let hszBe = document.getElementById("hsz");
+
+    if(isNaN(parseInt(hszBe.value))){ hszBe.value = 0}
+
+    if(hszBe.value< 1) alert("A megadott házszám nem megfelelő!");
 }
 
