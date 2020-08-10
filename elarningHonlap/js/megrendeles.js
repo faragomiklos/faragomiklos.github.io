@@ -69,7 +69,6 @@ function szovegEllenoriz(ellenorizendo, hossz) {
     //else alert("A " +szoveg.title+ " nem megfelelő!");
 }
 
-
 function emailEllenoriz() {
     let mailforma = /^([A-z0-9\_\.\-]+)@([a-z0-9\_\-\.]+).([a-z]{2,})$/;
     
