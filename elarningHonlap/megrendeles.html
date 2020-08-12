@@ -6,12 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="/elarningHonlap/css/kozos.css">
     <link rel="stylesheet" href="/elarningHonlap/css/megrendeles.css">
+    <link rel="stylesheet" href="/elarningHonlap/css/idojaras.css">
     <title>Megrendelés</title>
 </head>
 
-<body>
+<body onload="napKivalaszt()">
 
     <div class="oldal">
+        <div class="idojarasModul">
+                    <select id="nap" class="napValaszto">
+                        <option value=0>Hétfő</option>
+                        <option value=1>Kedd</option>
+                        <option value=2>Szerda</option>
+                        <option value=3>Csütörtök</option>
+                        <option value=4>Péntek</option>
+                        <option value=5>Szombat</option>
+                        <option value=6>Vasárnap</option>                
+                    </select>
+                     
+
+                    <button class="napGomb" onclick="napKivalaszt()">Megnéz</button>
+
+                <div class="aktHomerseklet">
+                    <strong>Várható napi hőmérséklet: </strong><span id="napiHomerseklet">0</span>°C
+                </div>
+ 
+        </div>
+
         <nav>
             <ul>
                 <li><a href="/elarningHonlap/folodal.html">Elérhetőség</a></li>
@@ -34,19 +55,25 @@
                     
                     <label class="megnevezes" for="vezeteknev">Vezetéknév:</label>
                     <input class="adat" type="text" name="vezeteknev" id="vezeteknev" placeholder="Vezetéknév" title="vezetéknév" required onblur="szovegEllenoriz('vezeteknev', 3)">
+                    <span class="kotmezo">*</span>
                     <label class="megnevezes" for="keresztnev">Keresztnév:</label>
                     <input class="adat" type="text" name="keresztnev" id="keresztnev" placeholder="Keresztnév" title="keresztnév" required onblur="szovegEllenoriz('keresztnev', 3)">
+                    <span class="kotmezo">*</span>
                     <label class="megnevezes" for="email">E-mail cím:</label>
                     <input class="adat" type="email" name="email" id="email" placeholder="pelda@pelda.hu" title="keresztnév" required onblur="emailEllenoriz()">
+                    <span class="kotmezo">*</span>
                     <label class="megnevezes" for="telszam">Telefonszám:</label>
                     <input class="adat" type="tel" name="telszam" id="telszam" placeholder="Telefonszám" title="telefonszám" required onblur="telefonszamEllenoriz()">
+                    <span class="kotmezo">*</span>
                     <label class="megnevezes" for="varos">Szállítási cím:</label>
                     <input class="cimIrszam" type="number" name="irszam" id="irszam" placeholder="9086" title="irányítószám" required>
                     <input class="cimVaros" type="text" name="varos" id="varos" placeholder="Város" title="város" required > <!-- onblur="szovegEllenoriz('varos', 2)" -->
                     <input class="cimUtca" type="text" name="utca" id="utca" placeholder="Példa út" title="utca" required> <!-- onblur="szovegEllenoriz('utca', 4)" -->
                     <input class="cimHazszam" type="number" name="hsz" id="hsz" placeholder="63" title="házszám" required onblur="hszEllenoriz()">
+                    <span class="kotmezo">*</span>
                     <label class="megnevezes" for="megjegyzes">Megjegyzés:</label>
-                    <input class="megjegyz" type="text" name="megjegyzes" id="megjegyzes" placeholder="megjegyzés" title="megjegyzés">
+                    <input class="megjegyz" type="textarea" name="megjegyzes" id="megjegyzes" placeholder="megjegyzés" title="megjegyzés">
+                    <span class="adat kotmezo"><small>A *-gal jelölt mezők kitöltése kötelező!</small></span>
 
                     <div class="cimBlokk"> </div>
 
@@ -118,7 +145,7 @@
     </div>
 
     <script src="/elarningHonlap/js/megrendeles.js"></script>
-
+    <script src="/elarningHonlap/js/idojaras.js"></script>
 </body>
 
 </html>
