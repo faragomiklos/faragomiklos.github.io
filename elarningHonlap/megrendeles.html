@@ -95,8 +95,15 @@
                     <label class="megnevezes" for="mennyiseg">Mennyiség:</label>
                     <input type="number" class="adat" name="mennyiseg" id="mennyiseg" value="1" required onblur="mennyisegEllenoriz()">
                     <small class="adat">Minimum 1 maximum 10 db rendelehtő!</small>
+                   
                     <div class="blokk alahuz">Összesen:</div>
-                    <div class="adat"><span class="fizetendo">0</span>Ft</div>
+                   
+                    <div class="adat"><span class="fizetendo">0</span>Ft<span class="szallitasidij"> + 500Ft szállítási díj</span></div>
+                   
+                    <div class="szalldij"><span class="szalldij">Vásárolj még 5000Ft értékben és a szállítást mi álljuk!</span></div>
+
+                    <div class="cimBlokk"> </div>
+                    
                     <button class="gomb" onclick="osszegSzamol()">Megrendelés</button>
                 </form>
 

@@ -1,3 +1,7 @@
+h1{
+    width: 300px;
+}
+
 .racs{
     display: grid;
     grid-template-columns: repeat(12, 10%);
@@ -54,6 +58,38 @@
     grid-column: 5/8;
     grid-row: span 2;
 }
+
+.szalldij{
+    margin-bottom: 20px;
+    grid-column: 3/8;
+    justify-self: center;
+    color: red;
+
+    font-size: 19px;
+}
+
+.szallitasidij{
+    color: red;
+}
+
+button{
+    background-color: #28A745;
+    color: rgb(61, 26, 2);
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0px;
+    border: o;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+button:hover{
+    box-shadow: none;
+    background-color: #D3E64A;
+}
+
 .gomb{
-    grid-column: 5/7;    
+    grid-column: 4/7;    
 }

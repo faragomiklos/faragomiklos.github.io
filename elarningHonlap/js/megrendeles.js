@@ -23,10 +23,13 @@ function osszegSzamol() {
     let feltet = kivalasztottFeltet();
     let szosz = kivalasztottSzosz();
     let osszeg = parseInt(mennyisegBemenet.value) * (alapar + parseInt(feltet) + parseInt(szosz));
+    let vegosszeg;
+    if(osszeg < 5000) vegosszeg = osszeg + 500;
+    else vegosszeg = osszeg;
+    alert("Fizetendő: " + vegosszeg + "Ft"); 
 
-    /* alert("Fizetendő: " + osszeg + "Ft"); */
+    /*fizetendoMegjelenit.innerHTML = osszeg;*/
 
-    fizetendoMegjelenit.innerHTML = osszeg;
 }
 
 
@@ -45,6 +48,20 @@ function mennyisegEllenoriz(){
     vegosszegFrissit();
 }
 
+function osszeghatarEllenoriz(osszeg){
+    let szalldij = document.querySelector("span.szallitasidij");
+    let szalldijFigyelmeztet = document.querySelector("span.szalldij");
+    let hianyzik = 5000-osszeg;
+    if(osszeg < 5000){
+        szalldij.innerHTML = " + 500Ft szállítási díj";
+        szalldijFigyelmeztet.innerHTML ="Vásárolj még "+ hianyzik +"Ft összegben, és a szállításod mi álljuk!";
+    } 
+    else{
+        szalldij.innerHTML = " a szállításod mi álljuk!";  
+        szalldijFigyelmeztet.innerHTML ="";
+    } 
+}
+
 function vegosszegFrissit(){
     let alapar = 1000;
     let fizetendoMegjelenit = document.querySelector("span.fizetendo");
@@ -53,6 +70,7 @@ function vegosszegFrissit(){
     let szosz = kivalasztottSzosz();
     let osszeg = parseInt(mennyisegBemenet.value) * (alapar + parseInt(feltet) + parseInt(szosz));
 
+    osszeghatarEllenoriz(osszeg);    
 
     fizetendoMegjelenit.innerHTML = osszeg;
     
