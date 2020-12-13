@@ -1,98 +1,79 @@
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	background: url("../kepek/hatter.jpg") rgba(0,0,0,1) no-repeat center center fixed;
+	color: white;
+	font: bold 20px/27px 'Roboto', sans-serif;
+	
 }
 
 
-body {
-    background: url('/kepek/hatter_2a.JPG') no-repeat fixed black center top;
-    margin: 0;
-}
 
-.oldal{
-    max-width: 1000px;
-    min-width: 880px;
-    margin: 0 auto;
-    font-family: sans-serif;
+
+div.tartalom{
+	min-width: 1220px;
+	max-width: 1620px;
+	margin: 0 auto;
 }
 
 header{
-    color: black;
-    width: 600px;
-    background-color: rgba(255, 255, 255, .5);
-    margin: 10px auto 30px auto;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-    border-radius: 20px;
-
+	height: 150px;
+	background: url("../kepek/fejlec.bmp") no-repeat center center;
+	background-size: contain;
+	margin: 10px auto;
 }
 
-nav{
-    width: 21%;
-    float: left;
-    padding: 0;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-ul{
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 10px 10px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    list-style-type: none;
-    color: black;
+div.nap{
+	display: inline-block;
+	min-width: 400px;
+	max-width: 600px;
+	margin: 10px auto;
 }
 
 
-li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-}
-nav li:hover{
-    background: rgba(255, 0, 0, 0.4);
+div .szam{
+	height: 100px;
+	background-size: contain;
 }
 
-main{
-    margin-left: 1%;
-    margin-right: 1%;
-    padding: 10px;
-    width: 75%;
-    float: left;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
+.szam01{ background: url("../kepek/ablak/szam01.bmp") no-repeat center center; }
+.szam02{ background: url("../kepek/ablak/szam02.bmp") no-repeat center center; }
+.szam03{ background: url("../kepek/ablak/szam03.bmp") no-repeat center center; }
+.szam04{ background: url("../kepek/ablak/szam04.bmp") no-repeat center center; }
+.szam05{ background: url("../kepek/ablak/szam05.bmp") no-repeat center center; }
+.szam06{ background: url("../kepek/ablak/szam06.bmp") no-repeat center center; }
+.szam07{ background: url("../kepek/ablak/szam07.bmp") no-repeat center center; }
+.szam08{ background: url("../kepek/ablak/szam08.bmp") no-repeat center center; }
+.szam09{ background: url("../kepek/ablak/szam09.bmp") no-repeat center center; }
+.szam10{ background: url("../kepek/ablak/szam10.bmp") no-repeat center center; }
+.szam11{ background: url("../kepek/ablak/szam11.bmp") no-repeat center center; }
+.szam12{ background: url("../kepek/ablak/szam12.bmp") no-repeat center center; }
+.szam13{ background: url("../kepek/ablak/szam13.bmp") no-repeat center center; }
+.szam14{ background: url("../kepek/ablak/szam14.bmp") no-repeat center center; }
+.szam15{ background: url("../kepek/ablak/szam15.bmp") no-repeat center center; }
+.szam16{ background: url("../kepek/ablak/szam16.bmp") no-repeat center center; }
+.szam17{ background: url("../kepek/ablak/szam17.bmp") no-repeat center center; }
+.szam18{ background: url("../kepek/ablak/szam18.bmp") no-repeat center center; }
+.szam19{ background: url("../kepek/ablak/szam19.bmp") no-repeat center center; }
+.szam20{ background: url("../kepek/ablak/szam20.bmp") no-repeat center center; }
+.szam21{ background: url("../kepek/ablak/szam21.bmp") no-repeat center center; }
+.szam22{ background: url("../kepek/ablak/szam22.bmp") no-repeat center center; }
+.szam23{ background: url("../kepek/ablak/szam23.bmp") no-repeat center center; }
+.szam24{ background: url("../kepek/ablak/szam24.bmp") no-repeat center center; }
+
+
+div.ablak{
+	height: 200px;
+	background: url("../kepek/ablak/zsaluZarva.bmp")  no-repeat center center;
+	background-size: contain;
 }
-
-
-main img{
-    width: 60%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-    
-}
-
-.tartalom::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
-
-
-footer{
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
-    height: 50px;
-    padding: 10px;
-    width: 98%;
-    
-    margin: 20px auto;
+div.ablak:hover{
+	height: 200px;
+	background: url("../kepek/ablak/zsaluNyitva.bmp") no-repeat center center;
+	background-size: contain;
 }
