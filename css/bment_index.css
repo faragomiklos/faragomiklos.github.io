@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body{
+	background: url("../kepek/hatter.jpg") rgba(0,0,0,1) no-repeat center center fixed;
+	background-color: white;
+	font: bold 20px/27px 'Roboto', sans-serif;
+	
+}
+
+.keret {	
+	min-width: 400px;
+	max-width: 1600px;
+	width: 90%;
+	margin: 0px auto;
+}
+
+header {
+	background: url("../kepek/fejlec.bmp") no-repeat center center;
+	background-size: contain;
+	height: 200px;
+	margin: 10px auto;
+}
+
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+}
+
+div .nap {
+	display: inline-block;
+	max-width: 30vW;
+	max-height: 20 vw;
+	position: relative;
+	margin: 20px auto;
+	
+	
+}
+
+div .szam {
+	max-width: 100%;
+	max-height: 100%;
+	background-size: contain;
+}
+
+
+div .szam01 {	background: url("../kepek/ablak/szam01.bmp") no-repeat center center; background-size: contain;}
+div .szam02 {	background: url("../kepek/ablak/szam02.bmp") no-repeat center center; background-size: contain;}
+div .szam03 {	background: url("../kepek/ablak/szam03.bmp") no-repeat center center; background-size: contain;}
+div .szam04 {	background: url("../kepek/ablak/szam04.bmp") no-repeat center center; background-size: contain;}
+div .szam05 {	background: url("../kepek/ablak/szam05.bmp") no-repeat center center; background-size: contain;}
+div .szam06 {	background: url("../kepek/ablak/szam06.bmp") no-repeat center center; background-size: contain;}
+div .szam07 {	background: url("../kepek/ablak/szam07.bmp") no-repeat center center; background-size: contain;}
+div .szam08 {	background: url("../kepek/ablak/szam08.bmp") no-repeat center center; background-size: contain;}
+div .szam09 {	background: url("../kepek/ablak/szam09.bmp") no-repeat center center; background-size: contain;}
+div .szam10 {	background: url("../kepek/ablak/szam10.bmp") no-repeat center center; background-size: contain;}
+div .szam11 {	background: url("../kepek/ablak/szam11.bmp") no-repeat center center; background-size: contain;}
+div .szam12 {	background: url("../kepek/ablak/szam12.bmp") no-repeat center center; background-size: contain;}
+div .szam13 {	background: url("../kepek/ablak/szam13.bmp") no-repeat center center; background-size: contain;}
+div .szam14 {	background: url("../kepek/ablak/szam14.bmp") no-repeat center center; background-size: contain;}
+div .szam15 {	background: url("../kepek/ablak/szam15.bmp") no-repeat center center; background-size: contain;}
+div .szam16 {	background: url("../kepek/ablak/szam16.bmp") no-repeat center center; background-size: contain;}
+div .szam17 {	background: url("../kepek/ablak/szam17.bmp") no-repeat center center; background-size: contain;}
+div .szam18 {	background: url("../kepek/ablak/szam18.bmp") no-repeat center center; background-size: contain;}
+div .szam19 {	background: url("../kepek/ablak/szam19.bmp") no-repeat center center; background-size: contain;}
+div .szam20 {	background: url("../kepek/ablak/szam20.bmp") no-repeat center center; background-size: contain;}
+div .szam21 {	background: url("../kepek/ablak/szam21.bmp") no-repeat center center; background-size: contain;}
+div .szam22 {	background: url("../kepek/ablak/szam22.bmp") no-repeat center center; background-size: contain;}
+div .szam23 {	background: url("../kepek/ablak/szam23.bmp") no-repeat center center; background-size: contain;}
+div .szam24 {	background: url("../kepek/ablak/szam24.bmp") no-repeat center center; background-size: contain;}
+
+
+div .ablak {
+	max-width:100%;
+	max-height: 100%;
+	background: url("../kepek/ablak/zsaluZarva.bmp") no-repeat center center;
+	background-size: contain;
+}
+
+div .ablak:hover {
+	max-height: 100%;
+	max-width: 100%;
+	background: url("../kepek/ablak/zsaluNyitva.bmp") no-repeat center center;
+	background-size: contain;
+}
+
+img {
+	position: absolute;
+	left: 204px;
+	top: 248px;
+	z-index: -1;
+	height:305px;
+	
+}
