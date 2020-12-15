@@ -6,7 +6,7 @@
 }
 
 body{
-	background: url("../kepek/hatter.jpg") rgba(0,0,0,1) no-repeat center center fixed;
+	background: url("../kepek/hatter.jpg") rgba(0,0,0,1) no-repeat top center fixed;
 	background-color: white;
 	font: bold 20px/27px 'Roboto', sans-serif;
 	
@@ -36,7 +36,7 @@ main {
 }
 
 a .nap {
-	margin: 20px;
+	margin: 10px;
 	display:flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -91,10 +91,11 @@ div .szam24 {	background: url("../kepek/ablak/szam24.bmp") no-repeat center cent
 
 
 img {
+	max-width: 100%;
 	width: 50%;
 	position: absolute;
 	left: 25%;
-    bottom: 8%;
+    bottom: 7%;
     z-index: -1;
 }
 
