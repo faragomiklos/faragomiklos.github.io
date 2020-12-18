@@ -20,6 +20,8 @@ img {
 	min-width: 400px;
 	width: 95%;
 	margin: 0 auto;
+	padding-top: 3rem;
+	
 	
 	
 }
@@ -32,6 +34,8 @@ header {
 	top: 0;
 	box-shadow: 0 10px 10px rgba(255, 255, 255, .5);
 	background-color: #512800;
+	z-index: 2;
+
 }
 
 header img {
@@ -43,13 +47,25 @@ header img {
 }
 
 
-footer {
-	display: inline-block;
-	height: 30vw;
+
+.lablecTtava {
+	display: inline-block;	
 	position: sticky;
 	position: -webkit-sticky;
-	bottom: 0;
+	height: 30vw;
 	left: 5vw;
+	bottom: 0;
+	z-index: 2;
+}
+
+.lablecAlbum {
+	display: inline-block;	
+	position: sticky;
+	position: -webkit-sticky;
+	height: 30vw;
+	left: 80vw;
+	bottom: 0;
+	z-index: 2;
 }
 
 .ablakok{
@@ -67,6 +83,7 @@ footer {
 	height: 70vw;
 	min-width: 400px;
 	margin-bottom: 5rem;
+	position: relative;
 }
 
 
@@ -112,17 +129,25 @@ footer {
 .zsalu {
 	height: 70%;
 	background: url("../kepek/ablak/zsaluZarva.bmp") no-repeat top center;
-	background-size: contain;	
+	background-size: contain;
+	z-index: 1;	
 }
 
 .zsalu:hover {
 	height: 70%;
 	background: url("../kepek/ablak/zsaluNyitva.bmp") no-repeat top center; 
-	background-size: contain;	
+	background-size: contain;
+	z-index: 1;	
 }
 
-	
 
+.kep {
+	display: inline-block;
+	position: absolute;
+	top: 26vw;
+	left: 28vw;	
+	width: 39vw;
+}
 
 
 
@@ -143,9 +168,17 @@ footer {
 		margin-bottom: 5rem;
 	}
 
-	footer {
+	.kep {
+		top: 12vw;
+		left:14vw;
+		width: 18vw;
+	}
+
+	.lablecAlbum, .lablecTtava {
 		height: 15vw;
 	}
+
+
 
 }	
 
@@ -166,7 +199,13 @@ footer {
 		margin-bottom: 5rem;
 	}
 
-	footer {
+	.kep {
+		top: 7vw;
+		left: 9vw;
+		width: 12vw;
+	}
+
+	.lablecAlbum, .lablecTtava {
 		height: 10vw;
 	}
 
