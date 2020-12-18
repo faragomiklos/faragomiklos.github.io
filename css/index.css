@@ -17,7 +17,7 @@ img {
 .oldal {
 	background-color: rgba(255,255,255,.1);
 	max-width: 1920px;
-	min-width: 400px;
+	/*min-width: 400px;*/
 	width: 95%;
 	margin: 0 auto;
 	padding-top: 3rem;
@@ -81,7 +81,7 @@ header img {
 .nap {
 	width: 100vw;
 	height: 70vw;
-	min-width: 400px;
+	/*min-width: 400px;*/
 	margin-bottom: 5rem;
 	position: relative;
 }
