@@ -9,6 +9,11 @@ body {
 		
 }
 
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .oldal {
 	background-color: rgba(255,255,255,.1);
 	max-width: 1920px;
@@ -19,6 +24,33 @@ body {
 	
 }
 
+header {
+	display: block;
+	width:100vw;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	box-shadow: 0 10px 10px rgba(255, 255, 255, .5);
+	background-color: #512800;
+}
+
+header img {
+	position: relative;
+	display: block;
+	padding-top: 4px;
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+
+footer {
+	display: inline-block;
+	height: 30vw;
+	position: sticky;
+	position: -webkit-sticky;
+	bottom: 0;
+	left: 5vw;
+}
 
 .ablakok{
 	display: flex;
@@ -56,6 +88,26 @@ body {
 .szam02 {background: url("../kepek/ablak/szam02.bmp") no-repeat top center; background-size: contain;}
 .szam03 {background: url("../kepek/ablak/szam03.bmp") no-repeat top center; background-size: contain;}
 .szam04 {background: url("../kepek/ablak/szam04.bmp") no-repeat top center; background-size: contain;}
+.szam05 {background: url("../kepek/ablak/szam05.bmp") no-repeat top center; background-size: contain;}
+.szam06 {background: url("../kepek/ablak/szam06.bmp") no-repeat top center; background-size: contain;}
+.szam07 {background: url("../kepek/ablak/szam07.bmp") no-repeat top center; background-size: contain;}
+.szam08 {background: url("../kepek/ablak/szam08.bmp") no-repeat top center; background-size: contain;}
+.szam09 {background: url("../kepek/ablak/szam09.bmp") no-repeat top center; background-size: contain;}
+.szam10 {background: url("../kepek/ablak/szam10.bmp") no-repeat top center; background-size: contain;}
+.szam11 {background: url("../kepek/ablak/szam11.bmp") no-repeat top center; background-size: contain;}
+.szam12 {background: url("../kepek/ablak/szam12.bmp") no-repeat top center; background-size: contain;}
+.szam13 {background: url("../kepek/ablak/szam13.bmp") no-repeat top center; background-size: contain;}
+.szam14 {background: url("../kepek/ablak/szam14.bmp") no-repeat top center; background-size: contain;}
+.szam15 {background: url("../kepek/ablak/szam15.bmp") no-repeat top center; background-size: contain;}
+.szam16 {background: url("../kepek/ablak/szam16.bmp") no-repeat top center; background-size: contain;}
+.szam17 {background: url("../kepek/ablak/szam17.bmp") no-repeat top center; background-size: contain;}
+.szam18 {background: url("../kepek/ablak/szam18.bmp") no-repeat top center; background-size: contain;}
+.szam19 {background: url("../kepek/ablak/szam19.bmp") no-repeat top center; background-size: contain;}
+.szam20 {background: url("../kepek/ablak/szam20.bmp") no-repeat top center; background-size: contain;}
+.szam21 {background: url("../kepek/ablak/szam21.bmp") no-repeat top center; background-size: contain;}
+.szam22 {background: url("../kepek/ablak/szam22.bmp") no-repeat top center; background-size: contain;}
+.szam23 {background: url("../kepek/ablak/szam23.bmp") no-repeat top center; background-size: contain;}
+.szam24 {background: url("../kepek/ablak/szam24.bmp") no-repeat top center; background-size: contain;}
 
 .zsalu {
 	height: 70%;
@@ -76,8 +128,12 @@ body {
 
 @media only screen and (min-width: 860px) {
 	
+	header img {
+		width: 50vw;
+	}
+
 	div .ablakok {
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}	
 	
   	div .nap {
@@ -87,22 +143,32 @@ body {
 		margin-bottom: 5rem;
 	}
 
+	footer {
+		height: 15vw;
+	}
 
 }	
 
 @media only screen and (min-width: 1900px) {
 	
+	header img {
+		width: 30vw;
+	}
+
 	div .ablakok {
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}	
 	
   	div .nap {
-		width: 20vw;
-		height: 14vw;
+		width: 30vw;
+		height: 20vw;
 		min-width: 400px;
 		margin-bottom: 5rem;
 	}
 
+	footer {
+		height: 10vw;
+	}
 
 }
 	
