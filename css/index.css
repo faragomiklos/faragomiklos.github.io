@@ -50,8 +50,7 @@ header img {
 
 .lablecTtava {
 	display: inline-block;	
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	height: 30vw;
 	left: 5vw;
 	bottom: 0;
@@ -60,8 +59,7 @@ header img {
 
 .lablecAlbum {
 	display: inline-block;	
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	height: 30vw;
 	left: 57vw;
 	bottom: 0;
@@ -145,7 +143,7 @@ header img {
 	display: inline-block;
 	position: absolute;
 	top: 26vw;
-	left: 28vw;	
+	left: 29vw;	
 	width: 39vw;
 }
 
