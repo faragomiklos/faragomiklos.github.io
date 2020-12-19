@@ -45,7 +45,7 @@ header img {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-content: space-around;
-	align-items: baseline;
+	align-items: center;
 
 }
 
@@ -69,11 +69,46 @@ h1 {
 
 .lablecVissza {
 	display: inline-block;	
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	height: 30vw;
 	left: 60vw;
 	bottom: 0;
+}
+
+
+footer {
+	display: block;
+	margin: 0 auto;
+	width: 80vw;
+	margin-bottom: 2vw;
+}
+
+.lapok {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+	align-items: center;
+	margin: 5px;
+
+
+}
+
+.lapok .lap {
+	display: inline-block;
+	padding: 5px 10px;
+	text-decoration: none;
+	background: rgba(255, 255, 255, .6);
+	border-radius: 10px;
+	font-size: 4vw;
+	color: #402306;
+}
+
+.lapok .lap:hover,
+.lapok span.lap {
+	background: #402306;
+	color: rgba(255, 255, 255, .6);
 }
 
 div.kepDoboz:hover {
