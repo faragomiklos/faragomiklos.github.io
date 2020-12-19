@@ -1,0 +1,116 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background: url("../kepek/hatter2.jpg") rgba(0,0,0,1) repeat-x top center fixed;
+	background-color: white;
+}
+
+img {
+	max-width: 100%;
+}
+
+.oldal {
+	margin: 0 auto;
+	margin-bottom: 3rem;
+}
+
+header {
+	display: block;
+	width:100vw;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	box-shadow: 0 10px 10px rgba(255, 255, 255, .5);
+	background: url("../kepek/hatter3.jpg") #512800 repeat-x center fixed;
+	z-index: 2;
+	margin-bottom: 3rem;
+}
+
+header img {
+	display: block;
+	padding-top: 4px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	max-width: 90%;
+	box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.galeria {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+	align-items: baseline;
+
+}
+
+.kepDoboz {
+	display: inline-block;
+	background-color: rgba(255, 255, 255, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+	border-radius: 10px;
+	width: 80vw;
+	margin-bottom: 2rem;
+	overflow: hidden;	
+	color: #402306;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+
+.lablecVissza {
+	display: inline-block;	
+	position: sticky;
+	position: -webkit-sticky;
+	height: 30vw;
+	left: 60vw;
+	bottom: 0;
+}
+
+div.kepDoboz:hover {
+	box-shadow: none;
+}
+
+
+@media only screen and (min-width: 860px) {
+	
+	header img {
+		width: 50vw;
+	}
+
+	.lablecVissza{
+		height: 15vw;
+		left: 80vw;
+	}
+
+	.kepDoboz {
+		width: 30vw;
+	}
+
+}	
+
+@media only screen and (min-width: 1900px) {
+	
+	header img {
+		width: 30vw;
+	}
+
+	.lablecVissza{
+		height: 10vw;
+		left: 85vw;
+	}
+
+	.kepDoboz {
+		width: 15vw;
+	}
+
+}

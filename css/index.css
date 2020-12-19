@@ -4,7 +4,7 @@
 }
 
 body {
-	background: url("../kepek/hatter.jpg") rgba(0,0,0,1) no-repeat top center fixed;
+	background: url("../kepek/hatter2.jpg") rgba(0,0,0,1) repeat-x top center fixed;
 	background-color: white;
 		
 }
@@ -15,10 +15,7 @@ img {
 }
 
 .oldal {
-	background-color: rgba(255,255,255,.1);
-	max-width: 1920px;
-	/*min-width: 400px;*/
-	width: 95%;
+
 	margin: 0 auto;
 	padding-top: 3rem;
 	
@@ -33,7 +30,7 @@ header {
 	position: -webkit-sticky;
 	top: 0;
 	box-shadow: 0 10px 10px rgba(255, 255, 255, .5);
-	background-color: #512800;
+	background: url("../kepek/hatter3.jpg") #512800 repeat-x center fixed;
 	z-index: 2;
 
 }
@@ -43,7 +40,10 @@ header img {
 	display: block;
 	padding-top: 4px;
 	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	max-width: 90%;
+	box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
 }
 
 
@@ -63,7 +63,7 @@ header img {
 	position: sticky;
 	position: -webkit-sticky;
 	height: 30vw;
-	left: 80vw;
+	left: 57vw;
 	bottom: 0;
 	z-index: 2;
 }
@@ -176,6 +176,11 @@ header img {
 
 	.lablecAlbum, .lablecTtava {
 		height: 15vw;
+
+	}
+
+	.lablecAlbum{
+		left: 76vw;
 	}
 
 
@@ -207,6 +212,10 @@ header img {
 
 	.lablecAlbum, .lablecTtava {
 		height: 10vw;
+	}
+
+	.lablecAlbum{
+		left: 83vw;
 	}
 
 }
