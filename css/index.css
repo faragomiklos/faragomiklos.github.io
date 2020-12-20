@@ -18,6 +18,7 @@ img {
 
 	margin: 0 auto;
 	padding-top: 3rem;
+	margin-bottom: 10rem;
 	
 	
 	
@@ -50,22 +51,37 @@ header img {
 
 .lablecTtava {
 	display: inline-block;	
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	height: 30vw;
 	left: 5vw;
 	bottom: 0;
 	z-index: 2;
 }
 
+.lablecRolam {
+	display: inline-block;	
+	position: fixed;
+	height: 10vw;
+	left: 40vw;
+	bottom: 0;
+	z-index: 2;
+}
+
+.lablecRolam:hover {
+	height: 11vw;
+}
+
 .lablecAlbum {
 	display: inline-block;	
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	height: 30vw;
 	left: 57vw;
 	bottom: 0;
 	z-index: 2;
+}
+
+.lablecAlbum:hover {
+	height: 31vw;
 }
 
 .ablakok{
@@ -145,7 +161,7 @@ header img {
 	display: inline-block;
 	position: absolute;
 	top: 26vw;
-	left: 28vw;	
+	left: 31vw;	
 	width: 39vw;
 }
 
@@ -183,6 +199,15 @@ header img {
 		left: 76vw;
 	}
 
+	
+	.lablecRolam:hover {
+		height: 14vw;
+	}
+	
+	.lablecAlbum:hover {
+		height: 16vw;
+	}
+
 
 
 }	
@@ -213,11 +238,22 @@ header img {
 	.lablecAlbum, .lablecTtava {
 		height: 10vw;
 	}
+	
+	.lablecRolam {
+		height: 5vw;
+	}
 
 	.lablecAlbum{
 		left: 83vw;
 	}
 
-}
+	.lablecRolam:hover {
+		height: 6vw;
+	}
 	
+	.lablecAlbum:hover {
+		height: 11vw;
+	}
+
+}
 	

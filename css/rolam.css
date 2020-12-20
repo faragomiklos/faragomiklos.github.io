@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+.oldal {
+	margin: 0 auto;
+    margin-bottom: 3rem;
+    max-width: 90%;
+    background: rgba(255, 255, 255, .5);
+    color:#402306;
+    font-size: 4vw;
+    padding: 2vw;
+}
+
+
+
+.oldal h1 {
+    text-align: center;
+}
+
+.oldal1 {
+    position: relative;
+    font-family: 'Russo One', sans-serif;
+}
+
+.oldal1 p {
+    margin-bottom: 2vw;;
+}
+
+.kep {
+    position: relative;
+    top: -10vw;
+    display: block;
+    height: 30vw;
+
+}
+
+.csillag {
+    position: absolute;
+    height: 30vw;
+    top: 0vw;
+    left: 0vw;
+}
+
+header img {
+	
+    max-width: 50vw;
+	
+}
+
+
+@media only screen and (min-width: 860px) {
+	
+	header img {
+		width: 30vw;
+    }
+
+    .kep {
+        height: 20vw;
+        left: 40vw;
+    }
+    
+    h1 {
+        font-size: 4vw;
+    }
+
+    .oldal1 {
+        font-size: 2vw;
+    }
+    
+    .oldal1 p {
+        margin-bottom: 0.8vw;;
+    }
+
+    .oldal1 .elerhetoseg p {
+        margin-bottom: 0.1vw;
+    }
+
+}	
+
+@media only screen and (min-width: 1900px) {
+	
+	header img {
+		width: 20vw;
+    }
+    .kep {
+        height: 15vw;
+        left: 40vw;
+    }
+    
+    h1 {
+        font-size: 3vw;
+    }
+
+    .oldal1 {
+        font-size: 1.5vw;
+    }
+    
+    .oldal1 p {
+        margin-bottom: 0.8vw;;
+    }
+
+    .oldal1 .elerhetoseg p {
+        margin-bottom: 0.1vw;
+    }
+
+}
+
+@media only screen and (min-width: 2400px) {
+	
+	header img {
+		width: 15vw;
+    }
+    
+    .oldal1 {
+        font-size: 1vw;
+    }
+    
+    .oldal1 p {
+        margin-bottom: 0.8vw;;
+    }
+
+    .oldal1 .elerhetoseg p {
+        margin-bottom: 0.1vw;
+    }
+
+}
