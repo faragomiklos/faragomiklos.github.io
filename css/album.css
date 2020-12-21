@@ -58,7 +58,7 @@ header img {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 	border-radius: 10px;
 	width: 80vw;
-	margin-bottom: 2rem;
+	margin: 2rem;
 	overflow: hidden;	
 	color: #402306;
 }
@@ -93,8 +93,8 @@ header img {
 	display: inline-block;
 	position: fixed;
 	z-index: 1;
-	width: 8vw;
-	height: 16vw;	
+	width: 12vw;
+	height: 24vw;	
 	top: 60vw;	
 	
 }
@@ -311,13 +311,13 @@ div.kepDoboz:hover {
 	}
 	
 	.oldal .galeria .kepDoboz  {
-		width: 10vw;
+		width: 12vw;
 	}
 
 	.oldal .galeria .kepDoboz .megnez a {
 		display: inline-block;
 		text-decoration: none;
-		padding: .5vw 5vw;
+		padding: .5vw .5vw;
 		font-size: 1vw;
 		color: #402306;
 	}
