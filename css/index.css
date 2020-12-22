@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,7 +8,7 @@
 body {
 	background: url("../kepek/hatter2.jpg") rgba(0,0,0,1) repeat-x top center fixed;
 	background-color: white;
-		
+    font-family: 'Spicy Rice', cursive;		
 }
 
 img {
@@ -14,32 +16,18 @@ img {
 	max-height: 100%;
 }
 
-.oldal {
-
-	margin: 0 auto;
-	padding-top: 3rem;
-	margin-bottom: 10rem;
-	
-	
-	
-}
-
 header {
 	display: block;
 	width:100vw;
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	top: 0;
 	box-shadow: 0 10px 10px rgba(255, 255, 255, .5);
-	background: url("../kepek/hatter3.jpg") #512800 repeat-x center fixed;
+	background: url("../kepek/hatter3.jpg") #512800 repeat-x center center fixed;
 	z-index: 2;
-
 }
 
 header img {
-	position: relative;
 	display: block;
-	padding-top: 4px;
 	margin: 0 auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -47,64 +35,64 @@ header img {
 	box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
 }
 
+.oldal {
+	position: relative;
+	top:20vw;
+	width: 90%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding-top: 3rem;
+	margin-bottom: 10rem;	
+}
 
-
-.lablecTtava {
+footer .lablecTabla {
 	display: inline-block;	
 	position: fixed;
 	height: 30vw;
+	bottom: 0;
+	z-index: 2;
+}
+
+footer .lablecTtava {
 	left: 5vw;
-	bottom: 0;
-	z-index: 2;
 }
 
-.lablecRolam {
-	display: inline-block;	
-	position: fixed;
-	height: 10vw;
-	left: 40vw;
-	bottom: 0;
-	z-index: 2;
+footer .lablecRolam {
+	height: 15vw;
+	left: 37vw;
 }
 
-.lablecRolam:hover {
-	height: 11vw;
+footer .lablecRolam:hover {
+	height: 17vw;
 }
 
-.lablecAlbum {
-	display: inline-block;	
-	position: fixed;
-	height: 30vw;
+footer .lablecAlbum {
 	left: 57vw;
-	bottom: 0;
-	z-index: 2;
 }
 
-.lablecAlbum:hover {
-	height: 31vw;
+footer .lablecAlbum:hover {
+	height: 32vw;
 }
 
-.ablakok{
+.oldal .ablakok{
+	max-width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	flex: 1;
-	justify-content: space-between;
-	
+	justify-content: center;
 }
 
 
-.nap {
-	width: 100vw;
-	height: 70vw;
-	/*min-width: 400px;*/
-	margin-bottom: 5rem;
+.oldal .ablakok .nap {
+	display: inline-block;
 	position: relative;
+	width: 80vw;
+	height: 69vw;
+	margin-bottom: 4rem;
 }
 
 
-
-.ablak {
+.oldal .ablakok .nap a .ablak {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -113,43 +101,43 @@ header img {
 	height: 100%;
 }
 
-.szam {
+.oldal .ablakok .nap a .ablak .szam {
 	height: 30%;
 }
 
-.szam01 {background: url("../kepek/ablak/szam01.bmp") no-repeat top center; background-size: contain;}
-.szam02 {background: url("../kepek/ablak/szam02.bmp") no-repeat top center; background-size: contain;}
-.szam03 {background: url("../kepek/ablak/szam03.bmp") no-repeat top center; background-size: contain;}
-.szam04 {background: url("../kepek/ablak/szam04.bmp") no-repeat top center; background-size: contain;}
-.szam05 {background: url("../kepek/ablak/szam05.bmp") no-repeat top center; background-size: contain;}
-.szam06 {background: url("../kepek/ablak/szam06.bmp") no-repeat top center; background-size: contain;}
-.szam07 {background: url("../kepek/ablak/szam07.bmp") no-repeat top center; background-size: contain;}
-.szam08 {background: url("../kepek/ablak/szam08.bmp") no-repeat top center; background-size: contain;}
-.szam09 {background: url("../kepek/ablak/szam09.bmp") no-repeat top center; background-size: contain;}
-.szam10 {background: url("../kepek/ablak/szam10.bmp") no-repeat top center; background-size: contain;}
-.szam11 {background: url("../kepek/ablak/szam11.bmp") no-repeat top center; background-size: contain;}
-.szam12 {background: url("../kepek/ablak/szam12.bmp") no-repeat top center; background-size: contain;}
-.szam13 {background: url("../kepek/ablak/szam13.bmp") no-repeat top center; background-size: contain;}
-.szam14 {background: url("../kepek/ablak/szam14.bmp") no-repeat top center; background-size: contain;}
-.szam15 {background: url("../kepek/ablak/szam15.bmp") no-repeat top center; background-size: contain;}
-.szam16 {background: url("../kepek/ablak/szam16.bmp") no-repeat top center; background-size: contain;}
-.szam17 {background: url("../kepek/ablak/szam17.bmp") no-repeat top center; background-size: contain;}
-.szam18 {background: url("../kepek/ablak/szam18.bmp") no-repeat top center; background-size: contain;}
-.szam19 {background: url("../kepek/ablak/szam19.bmp") no-repeat top center; background-size: contain;}
-.szam20 {background: url("../kepek/ablak/szam20.bmp") no-repeat top center; background-size: contain;}
-.szam21 {background: url("../kepek/ablak/szam21.bmp") no-repeat top center; background-size: contain;}
-.szam22 {background: url("../kepek/ablak/szam22.bmp") no-repeat top center; background-size: contain;}
-.szam23 {background: url("../kepek/ablak/szam23.bmp") no-repeat top center; background-size: contain;}
-.szam24 {background: url("../kepek/ablak/szam24.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam01 {background: url("../kepek/ablak/szam01.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam02 {background: url("../kepek/ablak/szam02.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam03 {background: url("../kepek/ablak/szam03.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam04 {background: url("../kepek/ablak/szam04.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam05 {background: url("../kepek/ablak/szam05.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam06 {background: url("../kepek/ablak/szam06.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam07 {background: url("../kepek/ablak/szam07.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam08 {background: url("../kepek/ablak/szam08.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam09 {background: url("../kepek/ablak/szam09.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam10 {background: url("../kepek/ablak/szam10.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam11 {background: url("../kepek/ablak/szam11.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam12 {background: url("../kepek/ablak/szam12.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam13 {background: url("../kepek/ablak/szam13.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam14 {background: url("../kepek/ablak/szam14.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam15 {background: url("../kepek/ablak/szam15.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam16 {background: url("../kepek/ablak/szam16.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam17 {background: url("../kepek/ablak/szam17.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam18 {background: url("../kepek/ablak/szam18.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam19 {background: url("../kepek/ablak/szam19.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam20 {background: url("../kepek/ablak/szam20.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam21 {background: url("../kepek/ablak/szam21.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam22 {background: url("../kepek/ablak/szam22.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam23 {background: url("../kepek/ablak/szam23.bmp") no-repeat top center; background-size: contain;}
+.oldal .ablakok .nap a .ablak .szam24 {background: url("../kepek/ablak/szam24.bmp") no-repeat top center; background-size: contain;}
 
-.zsalu {
+.oldal .ablakok .nap a .ablak .zsalu {
 	height: 70%;
 	background: url("../kepek/ablak/zsaluZarva.bmp") no-repeat top center;
 	background-size: contain;
 	z-index: 1;	
 }
 
-.zsalu:hover {
+.oldal .ablakok .nap a .ablak .zsalu:hover {
 	height: 70%;
 	background: url("../kepek/ablak/zsaluNyitva.bmp") no-repeat top center; 
 	background-size: contain;
@@ -157,11 +145,12 @@ header img {
 }
 
 
-.kep {
+.oldal .ablakok .nap a img {
 	display: inline-block;
 	position: absolute;
 	top: 26vw;
-	left: 31vw;	
+	left: 21vw;	
+	max-width: 0 auto;
 	width: 39vw;
 }
 
@@ -170,90 +159,173 @@ header img {
 @media only screen and (min-width: 860px) {
 	
 	header img {
-		width: 50vw;
+		width: 60vw;
+	}
+	.oldal {
+		top: 15vw;
 	}
 
-	div .ablakok {
-		justify-content: space-evenly;
-	}	
-	
-  	div .nap {
+	.oldal .ablakok .nap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex: 1;
+		position: relative;
 		width: 45vw;
+		height: 32vw;
+		margin-bottom: 4rem;
+	}
+
+	.oldal .ablakok .nap a .ablak {
+		width: 35vw;
 		height: 31.5vw;
 		min-width: 400px;
-		margin-bottom: 5rem;
+		margin-bottom: 3rem;
 	}
 
-	.kep {
-		top: 12vw;
+	.oldal .ablakok .nap a img {
+		top: 11vw;
 		left:14vw;
 		width: 18vw;
 	}
 
-	.lablecAlbum, .lablecTtava {
+	footer .lablecTabla {
 		height: 15vw;
-
-	}
-
-	.lablecAlbum{
-		left: 76vw;
-	}
-
-	
-	.lablecRolam:hover {
-		height: 14vw;
 	}
 	
-	.lablecAlbum:hover {
-		height: 16vw;
+	footer .lablecTtava {
+		left: 3vw;
 	}
-
+	
+	footer .lablecRolam {
+		height: 7.5vw;
+		left: 43vw;
+	}
+	
+	footer .lablecRolam:hover {
+		height: 9.5vw;
+	}
+	
+	footer .lablecAlbum {
+		left: 78vw;
+	}
+	
+	footer .lablecAlbum:hover {
+		height: 17vw;
+	}
 
 
 }	
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1600px) {
 	
 	header img {
 		width: 30vw;
 	}
 
+	.oldal {
+		top: 8vw;
+	}
+
 	div .ablakok {
 		justify-content: space-evenly;
 	}	
 	
-  	div .nap {
-		width: 30vw;
-		height: 20vw;
-		min-width: 400px;
-		margin-bottom: 5rem;
+	.oldal .ablakok .nap {
+		width: 32vw;
+		height: 30vw;
+	}
+	.oldal .ablakok .nap a .ablak {
+		width: 35vw;
+		height: 30vw;
 	}
 
-	.kep {
-		top: 7vw;
-		left: 9vw;
-		width: 12vw;
+	.oldal .ablakok .nap a img {
+		top: 11vw;
+		left:14vw;
+		width: 18vw;
 	}
 
-	.lablecAlbum, .lablecTtava {
+	footer .lablecTabla {
 		height: 10vw;
 	}
 	
-	.lablecRolam {
-		height: 5vw;
-	}
-
-	.lablecAlbum{
-		left: 83vw;
-	}
-
-	.lablecRolam:hover {
-		height: 6vw;
+	footer .lablecTtava {
+		left: 2vw;
 	}
 	
-	.lablecAlbum:hover {
-		height: 11vw;
+	footer .lablecRolam {
+		height: 5vw;
+		left: 45vw;
+	}
+	
+	footer .lablecRolam:hover {
+		height: 7vw;
+	}
+	
+	footer .lablecAlbum {
+		left: 84vw;
+	}
+	
+	footer .lablecAlbum:hover {
+		height: 12vw;
 	}
 
 }
 	
+@media only screen and (min-width: 2100px) {
+	
+	header img {
+		width: 30vw;
+	}
+
+	.oldal {
+		top: 8vw;
+	}
+
+	div .ablakok {
+		justify-content: space-evenly;
+	}	
+	
+	.oldal .ablakok .nap {
+		width: 25vw;
+		height: 25vw;
+	}
+	.oldal .ablakok .nap a .ablak {
+		width: 29vw;
+		height: 25vw;
+	}
+
+	.oldal .ablakok .nap a img {
+		top: 9vw;
+		left:7vw;
+		width: 16vw;
+	}
+
+	footer .lablecTabla {
+		height: 10vw;
+	}
+	
+	footer .lablecTtava {
+		left: 2vw;
+	}
+	
+	footer .lablecRolam {
+		height: 5vw;
+		left: 45vw;
+	}
+	
+	footer .lablecRolam:hover {
+		height: 7vw;
+	}
+	
+	footer .lablecAlbum {
+		left: 84vw;
+	}
+	
+	footer .lablecAlbum:hover {
+		height: 12vw;
+	}
+
+
+}
