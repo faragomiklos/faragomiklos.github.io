@@ -86,7 +86,7 @@ footer .lablecAlbum:hover {
 .oldal .ablakok .nap {
 	display: inline-block;
 	position: relative;
-	width: 750px;
+	width: 80vw;
 	height: 69vw;
 	margin-bottom: 4rem;
 }
@@ -149,7 +149,7 @@ footer .lablecAlbum:hover {
 	display: inline-block;
 	position: absolute;
 	top: 26vw;
-	left: 25vw;	
+	left: 21vw;	
 	max-width: 0 auto;
 	width: 39vw;
 }
@@ -165,15 +165,6 @@ footer .lablecAlbum:hover {
 		top: 15vw;
 	}
 
-	.oldal .ablakok .nap {
-		display: inline-block;
-		position: relative;
-		width: 50%;
-		height: 32vw;
-		margin-bottom: 4rem;
-	}
-
-	/*
 	.oldal .ablakok .nap {
 		display: flex;
 		flex-direction: row;
@@ -191,11 +182,11 @@ footer .lablecAlbum:hover {
 		min-width: 400px;
 		margin-bottom: 3rem;
 	}
-*/
+
 	.oldal .ablakok .nap a img {
-		top: 12vw;
-		left:13vw;
-		width: 19vw;
+		top: 11vw;
+		left:14vw;
+		width: 18vw;
 	}
 
 	footer .lablecTabla {
@@ -241,17 +232,18 @@ footer .lablecAlbum:hover {
 	}	
 	
 	.oldal .ablakok .nap {
-		width: 33%;
-		height: 24vw;
+		width: 32vw;
+		height: 30vw;
 	}
 	.oldal .ablakok .nap a .ablak {
-		height: 24vw;
+		width: 35vw;
+		height: 30vw;
 	}
 
 	.oldal .ablakok .nap a img {
-		top: 9vw;
-		left:8vw;
-		width: 14vw;
+		top: 11vw;
+		left:14vw;
+		width: 18vw;
 	}
 
 	footer .lablecTabla {
@@ -281,14 +273,14 @@ footer .lablecAlbum:hover {
 
 }
 	
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 2100px) {
 	
 	header img {
 		width: 30vw;
 	}
 
 	.oldal {
-		top: 7vw;
+		top: 8vw;
 	}
 
 	div .ablakok {
@@ -296,18 +288,18 @@ footer .lablecAlbum:hover {
 	}	
 	
 	.oldal .ablakok .nap {
-		width: 25%;
-		height: 18vw;
+		width: 25vw;
+		height: 25vw;
 	}
-
 	.oldal .ablakok .nap a .ablak {
-		height: 18vw;
+		width: 29vw;
+		height: 25vw;
 	}
 
 	.oldal .ablakok .nap a img {
-		top: 6vw;
-		left:6vw;
-		width: 11vw;
+		top: 9vw;
+		left:7vw;
+		width: 16vw;
 	}
 
 	footer .lablecTabla {
