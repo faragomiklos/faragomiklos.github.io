@@ -337,3 +337,26 @@ footer .lablecAlbum:hover {
 
 
 }
+
+@media only screen and (min-width: 2100px) {
+	.oldal {
+		width: 90%;
+		max-width: 2500px;
+			
+	}
+	.oldal .ablakok .nap {
+		width: 20%;
+		height: 14vw;
+	}
+
+	.oldal .ablakok .nap a .ablak {
+		height: 14vw;
+	}
+
+	.oldal .ablakok .nap a img {
+		top: 5vw;
+		left:5vw;
+		width: 8vw;
+	}
+
+}
