@@ -2,7 +2,8 @@
 
 
 .oldal {
-	margin: 0 auto;
+    margin: 0 auto;
+    top: 30vw;;
     margin-bottom: 3rem;
     max-width: 90%;
     background: rgba(255, 255, 255, .5);
@@ -12,6 +13,9 @@
 }
 
 
+header img {
+    width: 40vw;
+}
 
 .oldal h1 {
     text-align: center;
@@ -28,7 +32,7 @@
 
 .kep {
     position: relative;
-    top: -10vw;
+    top: 25vw;
     display: block;
     height: 30vw;
 
@@ -38,27 +42,27 @@
     position: absolute;
     height: 30vw;
     top: 0vw;
-    left: 0vw;
-}
-
-header img {
-	
-    max-width: 50vw;
-	
+    left: 32vw;
 }
 
 
 @media only screen and (min-width: 860px) {
-	
-	header img {
-		width: 30vw;
+
+    header img {
+        width: 30vw;
     }
 
     .kep {
+        top: 18vw;
         height: 20vw;
-        left: 40vw;
+        left: 6vw;
     }
-    
+   
+   
+    .oldal {
+        top:20vw;
+    }
+
     h1 {
         font-size: 4vw;
     }
@@ -77,14 +81,39 @@ header img {
 
 }	
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1600px) {
 	
 	header img {
-		width: 20vw;
+		width: 15vw;
     }
+    
+    .oldal {
+        top: 10vw;
+    }
+
+    .oldal1 {
+        font-size: 1vw;
+    }
+    
+    .oldal1 p {
+        margin-bottom: 0.8vw;;
+    }
+
+    .oldal1 .elerhetoseg p {
+        margin-bottom: 0.1vw;
+    }
+
+    .kep {
+        top: 10vw;
+    }
+
+}
+
+@media only screen and (min-width: 1900px) {
+
     .kep {
         height: 15vw;
-        left: 40vw;
+        left: 10vw;
     }
     
     h1 {
@@ -104,6 +133,8 @@ header img {
     }
 
 }
+
+
 
 @media only screen and (min-width: 2400px) {
 	
