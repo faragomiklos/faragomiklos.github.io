@@ -252,19 +252,19 @@ div.kepDoboz:hover {
 	}
 
 	.jobbraNyil {
-		right: 10vw;
+		right: 2vw;
 	}
 	
 	.jobbraNyil:hover {
-		right: 10vw;
+		right: 2vw;
 	}
 	
 	.balraNyil {
-		left: 10vw;
+		left: 2vw;
 	}
 
 	.balraNyil:hover {
-		left: 10vw;
+		left: 2vw;
 	}
 
 	.lablecVissza{
@@ -311,9 +311,9 @@ div.kepDoboz:hover {
 
 	.jobbraNyil,
 	.balraNyil {
-		width: 2vw;
-		height: 4vw;	
-		top: 20vw;	
+		width: 3vw;
+		height: 6vw;	
+		top: 25vw;	
 	
 	}
 
