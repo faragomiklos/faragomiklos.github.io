@@ -1,46 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-}
-
-body {
-	background: url("../kepek/hatter2.jpg") rgba(0,0,0,1) repeat-x top center fixed;
-	background-color: white;
-    font-family: 'Spicy Rice', cursive;
-}
-
-img {
-	max-width: 100%;
-}
-
-.oldal {
-	margin: 0 auto;
-	margin-bottom: 3rem;
-}
 
 header {
-	display: block;
-	width:100vw;
-	position: sticky;
-	position: -webkit-sticky;
-	top: 0;
-	box-shadow: 0 10px 10px rgba(255, 255, 255, .5);
 	background: url("../kepek/hatter3.jpg") #512800 repeat-x center fixed;
-	z-index: 2;
-	margin-bottom: 3rem;
 }
 
-header img {
-	display: block;
-	padding-top: 4px;
-	margin: 0 auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	max-width: 90%;
-	box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
-}
 
 .oldal .galeria {
 	display: flex;
@@ -206,6 +168,22 @@ div.kepDoboz:hover {
 	
 	}
 
+	.jobbraNyil {
+		right: 5vw;
+	}
+	
+	.jobbraNyil:hover {
+		right: 5vw;
+	}
+	
+	.balraNyil {
+		left: 5vw;
+	}
+
+	.balraNyil:hover {
+		left: 5vw;
+	}
+
 	.lablecVissza{
 		height: 15vw;
 		left: 80vw;
@@ -240,6 +218,25 @@ div.kepDoboz:hover {
 
 }	
 
+@media only screen and (min-width: 1600px) {
+	
+	header img {
+		width: 30vw;
+	}
+
+	.oldal {
+		top: 8vw;
+	}
+
+	footer .lablecTabla {
+		height: 10vw;
+	}
+
+	footer {
+
+	}
+}
+
 @media only screen and (min-width: 1900px) {
 	
 	header img {
@@ -252,6 +249,22 @@ div.kepDoboz:hover {
 		height: 8vw;	
 		top: 25vw;	
 	
+	}
+
+	.jobbraNyil {
+		right: 10vw;
+	}
+	
+	.jobbraNyil:hover {
+		right: 10vw;
+	}
+	
+	.balraNyil {
+		left: 10vw;
+	}
+
+	.balraNyil:hover {
+		left: 10vw;
 	}
 
 	.lablecVissza{
@@ -291,6 +304,9 @@ div.kepDoboz:hover {
 	
 	header img {
 		width: 20vw;
+	}
+	.oldal {
+		top: 5vw;
 	}
 
 	.jobbraNyil,
