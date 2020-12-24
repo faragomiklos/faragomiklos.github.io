@@ -358,5 +358,28 @@ footer .lablecAlbum:hover {
 		left:5vw;
 		width: 8vw;
 	}
-
+	footer .lablecTabla {
+		height: 6vw;
+	}
+	
+	footer .lablecTtava {
+		left: 2vw;
+	}
+	
+	footer .lablecRolam {
+		height: 3vw;
+		left: 45vw;
+	}
+	
+	footer .lablecRolam:hover {
+		height: 5vw;
+	}
+	
+	footer .lablecAlbum {
+		left: 84vw;
+	}
+	
+	footer .lablecAlbum:hover {
+		height: 8vw;
+	}
 }
